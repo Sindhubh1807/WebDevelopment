@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .navbar {
+      background-color: #fff;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+    }
+    .navbar input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .banner {
+      display: flex;
+      overflow-x: scroll;
+      margin: 10px 0;
+    }
+    .banner img {
+      width: 700px;
+      height: 200px;
+      margin: 0 5px;
+      display: flex;
+    }
+    .kyc-box {
+      background-color: #e0e7ff;
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+    .kyc-box a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      color: blue;
+      
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .categories {
+      display: flex;
+      justify-content: space-around;
+      margin: 10px;
+    }
+    .categories div {
+      text-align: center;
+    }
+    .categories img {
+      width: 50px;
+      height: 50px;
+    }
+    .products {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 10px;
+    }
+    .product {
+      background-color:skyblue;
+      padding: 10px;
+      margin: 10px;
+      width: 45%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      margin: 10px;
+    }
+    .product img {
+      width: 60%;
+      color: skyblue ;
+      height:  auto;
+      display: center;
+    }
+    .chat-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: red;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 16px;
+    }
+    
+  </style>
+  <style>
+   .body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    width: 300px;
+  }
+  
+  .nav-item .icon {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 4px;
+    width: 300px
+  }
+  
+  .nav-item:hover {
+    color: #e91e63;
+  }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <input type="text" placeholder="Search here">
+  </div>
+
+  <div class="banner">
+    <img src="c:\Users\user\Downloads\WhatsApp Image 2024-11-17 at 3.21.13 PM.jpeg" alt="Banner 1">
+    <img src="c:\Users\user\Downloads\WhatsApp Image 2024-11-17 at 3.18.47 PM.jpeg" alt="Banner 2">
+    <img src="c:\Users\user\Downloads\WhatsApp Image 2024-11-17 at 3.21.13 PM (1).jpeg" alt="Banner 3">
+  </div>
+
+  <div class="kyc-box">
+    <h3>KYC Pending</h3>
+    <p>You need to provide the required documents for your account activation.</p>
+    <a href="#"><u>Click Here</u></a>
+  </div>
+
+  <div class="categories">
+    <div>
+      <img src="c:\Users\user\Downloads\WhatsApp Image 2024-11-17 at 3.18.45 PM.jpeg" alt="Mobile">
+      <p>Mobile</p>
+    </div>
+    <div>
+      <img src="c:\Users\user\Downloads\WhatsApp Image 2024-11-17 at 3.18.45 PM (1).jpeg" alt="Laptop">
+      <p>Laptop</p>
+    </div>
+    <div>
+      <img src="c:\Users\user\Downloads\WhatsApp Image 2024-11-17 at 3.18.45 PM (2).jpeg" alt="Camera">
+      <p>Camera</p>
+    </div>
+    <div>
+      <img src="c:\Users\user\Downloads\WhatsApp Image 2024-11-17 at 3.18.46 PM.jpeg" alt="LED">
+      <p>LED</p>
+    </div>
+  </div>
+
+  <div class="products">
+    <div class="product">
+      <p><b>EXCLUSIVE FOR YOU</b></p>
+      <img src="c:\Users\user\Downloads\WhatsApp Image 2024-11-17 at 3.18.46 PM (1).jpeg" alt="Nokia 8.1 pro">
+      <p><b>iPhone 16</b></p>
+      <p><strong>32% OFF</strong></p>
+    </div>
+    <div class="product">
+      <img src="c:\Users\user\Downloads\WhatsApp Image 2024-11-17 at 3.18.47 PM (1).jpeg" alt="Realme Nazro">
+      <p><b>Realme Nazro</b></p>
+      <p><strong>14% OFF</strong></p>
+    </div>
+  </div>
+  <div class="navbar">
+    <a href="#home" class="nav-item">
+      <span class="icon">🏠</span>
+      <span class="label">Home</span>
+    </a>
+    <a href="#categories" class="nav-item">
+      <span class="icon">📂</span>
+      <span class="label">Categories</span>
+    </a>
+    <a href="#deals" class="nav-item">
+      <span class="icon">🔥</span>
+      <span class="label">Deals</span>
+    </a>
+    <a href="#cart" class="nav-item">
+      <span class="icon">🛒</span>
+      <span class="label">Cart</span>
+    </a>
+    <a href="#profile" class="nav-item">
+      <span class="icon">👤</span>
+      <span class="label">Profile</span>
+    </a>
+  </div>
+  
+
+  <button class="chat-button">Chat</button>
+</body>
+</html>
